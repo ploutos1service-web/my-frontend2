@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vibeondemand | Premium DJ & Band Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                black: '#000000',
+                dark: '#0a0a0a',
+                card: '#111111',
+                neonBlue: '#00D9FF',
+                neonPurple: '#9C2FFF',
+              }
+            },
+            boxShadow: {
+              'neon-blue': '0 0 10px rgba(0, 217, 255, 0.5), 0 0 20px rgba(0, 217, 255, 0.3)',
+              'neon-purple': '0 0 10px rgba(156, 47, 255, 0.5), 0 0 20px rgba(156, 47, 255, 0.3)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #111;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00D9FF;
+      }
+    </style>
+  <!-- Removed importmap so Vite / local node_modules control module resolution.
+       Import maps here previously forced the browser to load React/React-DOM from a CDN
+       which can cause duplicate React instances and "Invalid hook call" issues -> white screen.
+       If you intentionally use a CDN import map, make sure to keep only one React instance across bundles. -->
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
