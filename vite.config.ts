@@ -8,6 +8,11 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 3000,
         host: '0.0.0.0',
+        fs: {
+          // Allow serving files from project root and parent directory in case imports
+          // reference files outside the current working directory (fixes "outside of Vite serving allow list").
+          allow: [path.resolve(__dirname), path.resolve(__dirname, '..')]
+        }
       },
       plugins: [react()],
       define: {
