@@ -1,4 +1,4 @@
-import { Artist, ArtistCategory } from './types';
+import { Artist, ArtistCategory } from './pages/types';
 
 export const MOCK_ARTISTS: Artist[] = [
   {
